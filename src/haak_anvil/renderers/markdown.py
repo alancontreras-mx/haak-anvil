@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-from haak_forge.core.models import Finding, ReportBundle
-from haak_forge.core.severity import Severity
-from haak_forge.renderers.base import RendererBase
+from haak_anvil.core.models import Finding, ReportBundle
+from haak_anvil.core.severity import Severity
+from haak_anvil.renderers.base import RendererBase
 
 _SEV_BADGE = {
     Severity.CRITICAL: "🔴 CRITICAL",

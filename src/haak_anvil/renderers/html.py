@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from haak_forge.core.models import ReportBundle
-from haak_forge.core.severity import Severity
-from haak_forge.renderers.base import RendererBase
+from haak_anvil.core.models import ReportBundle
+from haak_anvil.core.severity import Severity
+from haak_anvil.renderers.base import RendererBase
 
 _TEMPLATES_DIR = __file__.replace("renderers/html.py", "templates/html").replace(
     "renderers\\html.py", "templates\\html"

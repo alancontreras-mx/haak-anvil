@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from haak_forge.core.models import ReportBundle
-from haak_forge.renderers.base import RendererBase
+from haak_anvil.core.models import ReportBundle
+from haak_anvil.renderers.base import RendererBase
 
 
 class JsonRenderer(RendererBase):

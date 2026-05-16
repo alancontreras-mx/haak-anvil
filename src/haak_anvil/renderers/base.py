@@ -5,7 +5,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-from haak_forge.core.models import ReportBundle
+from haak_anvil.core.models import ReportBundle
 
 
 class RendererBase(ABC):

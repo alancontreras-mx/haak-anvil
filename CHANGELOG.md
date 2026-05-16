@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Haak Forge will be documented in this file. The format
+All notable changes to Haak Anvil will be documented in this file. The format
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -27,7 +27,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Nmap XML parser (Nmap 7.x compatible, defusedxml)
 - Nessus v2 .nessus parser (CVSS v3 preferred, CVE/CWE extraction from tags + free text)
 - Renderers: JSON (machine), Markdown (human), HTML (Jinja2 + Tailwind CDN)
-- CLI: `haak-forge nmap | nessus | merge | version`
+- CLI: `haak-anvil nmap | nessus | merge | version`
 - ReportBundle merge across multiple tools on same engagement
 - Test suite (pytest, fixtures for Nmap + Nessus samples)
 - GitHub Actions CI (Linux/Mac/Windows × Python 3.10/3.11/3.12)
@@ -37,5 +37,5 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Authors
 - Alan Contreras (`@HaakConsulting` / contacto@haak.com.mx)
 
-[Unreleased]: https://github.com/HaakConsulting/haak-forge/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/HaakConsulting/haak-forge/releases/tag/v0.1.0
+[Unreleased]: https://github.com/alancontreras-mx/haak-anvil/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/alancontreras-mx/haak-anvil/releases/tag/v0.1.0

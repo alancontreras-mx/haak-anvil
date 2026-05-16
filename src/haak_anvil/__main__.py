@@ -1,4 +1,4 @@
-from haak_forge.cli import app
+from haak_anvil.cli import app
 
 if __name__ == "__main__":
     app()

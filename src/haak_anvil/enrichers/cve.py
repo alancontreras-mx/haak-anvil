@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import httpx
 
-from haak_forge.core.models import ReportBundle
+from haak_anvil.core.models import ReportBundle
 
 NVD_API = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 
@@ -23,7 +23,7 @@ class CveEnricher:
       - Async fetch per unique CVE in findings
       - Annotate with CVSS v3.1 if missing
       - Add EPSS percentile
-      - Cache in ~/.haak-forge/cache/cve/
+      - Cache in ~/.haak-anvil/cache/cve/
     """
 
     def __init__(self, *, timeout: float = 10.0, api_key: str | None = None) -> None:

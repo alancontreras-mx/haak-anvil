@@ -1,4 +1,4 @@
-"""Haak Forge — modern pentest report generator.
+"""Haak Anvil — modern pentest report generator.
 
 Author:  Alan Contreras <contacto@haak.com.mx>
 License: Apache-2.0

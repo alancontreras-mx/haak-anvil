@@ -31,7 +31,7 @@ jobs:
         run: mypy src
         continue-on-error: true
       - name: Tests
-        run: pytest --cov=haak_forge --cov-report=term-missing
+        run: pytest --cov=haak_anvil --cov-report=term-missing
 
   build:
     runs-on: ubuntu-latest

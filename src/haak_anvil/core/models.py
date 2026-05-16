@@ -7,8 +7,8 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-from haak_forge.core.engagement import Engagement
-from haak_forge.core.severity import CVSS, Severity
+from haak_anvil.core.engagement import Engagement
+from haak_anvil.core.severity import CVSS, Severity
 
 
 class Service(BaseModel):
@@ -78,7 +78,7 @@ class ReportBundle(BaseModel):
     assets: list[Asset] = Field(default_factory=list)
     findings: list[Finding] = Field(default_factory=list)
     generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
-    generator: str = "haak-forge"
+    generator: str = "haak-anvil"
     generator_version: str = "0.1.0"
 
     # ----- aggregation helpers -----

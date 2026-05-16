@@ -1,4 +1,4 @@
-from haak_forge.core.severity import CVSS, Severity, severity_from_cvss
+from haak_anvil.core.severity import CVSS, Severity, severity_from_cvss
 
 
 def test_severity_numeric_order():
