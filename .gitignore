@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Output / artifacts (NUNCA versionar reportes con datos de cliente)
+output/
+reports/
+engagements/
+*.html.out
+*.pdf.out
+*.docx.out
+
+# Secrets / config (NUNCA en repo)
+.env
+.env.local
+*.key
+*.pem
+config.local.yaml
+secrets.yaml
+
+# Sample inputs con data real
+*.nessus
+*.nmap.xml
+!tests/fixtures/*.nessus
+!tests/fixtures/*.nmap.xml

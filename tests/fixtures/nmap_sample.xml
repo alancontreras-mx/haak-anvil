@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -sV -oX nmap_sample.xml 10.0.0.10" start="1715000000" version="7.94">
+  <scaninfo type="syn" protocol="tcp"/>
+  <host starttime="1715000000" endtime="1715000050">
+    <status state="up" reason="echo-reply"/>
+    <address addr="10.0.0.10" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="server01.acme.lan" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open" reason="syn-ack"/>
+        <service name="ssh" product="OpenSSH" version="8.2p1" extrainfo="Ubuntu" />
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open" reason="syn-ack"/>
+        <service name="http" product="nginx" version="1.18.0"/>
+      </port>
+      <port protocol="tcp" portid="443">
+        <state state="open" reason="syn-ack"/>
+        <service name="https" product="nginx" version="1.18.0"/>
+      </port>
+      <port protocol="tcp" portid="3389">
+        <state state="closed" reason="reset"/>
+      </port>
+    </ports>
+    <os>
+      <osmatch name="Linux 5.x" accuracy="95"/>
+    </os>
+  </host>
+  <host starttime="1715000050" endtime="1715000100">
+    <status state="up" reason="echo-reply"/>
+    <address addr="10.0.0.20" addrtype="ipv4"/>
+    <ports>
+      <port protocol="tcp" portid="445">
+        <state state="open" reason="syn-ack"/>
+        <service name="microsoft-ds" product="Samba" version="4.13.17"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>

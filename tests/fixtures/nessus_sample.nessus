@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<NessusClientData_v2>
+  <Policy>
+    <policyName>Basic Network Scan</policyName>
+  </Policy>
+  <Report name="Test Report">
+    <ReportHost name="10.0.0.10">
+      <HostProperties>
+        <tag name="host-ip">10.0.0.10</tag>
+        <tag name="host-fqdn">server01.acme.lan</tag>
+        <tag name="operating-system">Linux Kernel 5.4 on Ubuntu 20.04</tag>
+      </HostProperties>
+      <ReportItem port="22" svc_name="ssh" protocol="tcp" severity="2" pluginID="153953"
+                  pluginName="OpenSSH 8.x &lt; 8.3 RCE" pluginFamily="Misc.">
+        <risk_factor>Medium</risk_factor>
+        <cvss3_base_score>6.5</cvss3_base_score>
+        <cvss3_vector>CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H</cvss3_vector>
+        <synopsis>Outdated OpenSSH version.</synopsis>
+        <description>OpenSSH 8.2p1 detected. Known vulnerable to CVE-2020-15778.</description>
+        <solution>Upgrade to OpenSSH 8.3 or later.</solution>
+        <cve>CVE-2020-15778</cve>
+        <cwe>CWE-78</cwe>
+        <see_also>https://nvd.nist.gov/vuln/detail/CVE-2020-15778
+https://www.openssh.com/security.html</see_also>
+        <plugin_output>Banner: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.3</plugin_output>
+      </ReportItem>
+      <ReportItem port="443" svc_name="https" protocol="tcp" severity="4" pluginID="104743"
+                  pluginName="SSL Self-Signed Certificate" pluginFamily="General">
+        <risk_factor>Critical</risk_factor>
+        <cvss3_base_score>9.8</cvss3_base_score>
+        <cvss3_vector>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</cvss3_vector>
+        <synopsis>Certificate not trusted.</synopsis>
+        <description>The X.509 certificate is self-signed and not trusted by any common CA.</description>
+        <solution>Install a CA-signed certificate.</solution>
+      </ReportItem>
+      <ReportItem port="0" svc_name="general" protocol="tcp" severity="0" pluginID="19506"
+                  pluginName="Nessus Scan Information" pluginFamily="Settings">
+        <risk_factor>None</risk_factor>
+        <synopsis>Scan info.</synopsis>
+        <description>Nessus version 10.x scan summary.</description>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>
